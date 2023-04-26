@@ -1,0 +1,148 @@
+/* HEADER */
+header {
+  padding: 1em 0;
+  background-color: #27272a;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+header .header .header-logo {
+  gap: 0.3em;
+}
+
+header .header .header-logo .header-logo_img {
+  width: 2.5em;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .header .header-logo .header-logo_text span {
+  font-size: 1em;
+  cursor: pointer;
+  color: var(--text);
+}
+
+header .header .header-logo .header-logo_text span:hover {
+  color: #fff;
+}
+
+header .header .header-menu {
+  margin: 0;
+  list-style: none;
+  transition: all 0.5s ease;
+  @media only screen and (max-width: 992px) {
+    display: none;
+    position: absolute;
+    /* bottom: 0; */
+    left: 40%;
+    right: 0;
+    background-color: black;
+    padding: 1em;
+  }
+}
+
+header .header .header-menu li {
+  @media only screen and (min-width: 992px) {
+    display: inline-block;
+  }
+  padding: 0.7em;
+  border-radius: 5px;
+}
+
+header .header .header-menu li a {
+  font-size: 1em;
+  cursor: pointer;
+  color: var(--text);
+}
+
+header .header .header-menu li:hover {
+  background-color: rgb(63 63 70 / 1);
+}
+
+header .header .header-menu li:hover a {
+  color: #fff;
+}
+
+header .header-icon {
+  display: none;
+  font-size: 1.5em;
+  @media only screen and (max-width: 992px) {
+    display: block;
+  }
+}
+
+/* BODY */
+.body {
+  padding: 2em 0;
+}
+
+.body .list-content .block-content .block-content_img {
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.body .list-content .block-content .block-content_img:hover {
+  scale: 1.05;
+}
+
+.body .list-content .block-content .block-content_detail {
+  padding: 1em 0;
+}
+
+.body .list-content .block-content .block-content_detail h3 a {
+  font-size: 0.9em;
+}
+
+.body .list-content .block-content .block-content_detail h3 a:hover {
+  color: red;
+}
+
+.body .list-content .block-content .block-content_detail p {
+  font-size: 1em;
+}
+
+/* FOOTER */
+footer {
+  background-color: #27272a;
+  padding: 3em 0;
+}
+
+footer .footer .footer-menu {
+}
+
+footer .footer .footer-menu h4 {
+  color: #fff;
+  font-size: 1.5em;
+  @media only screen and (max-width: 576px) {
+    font-size: 1.2em;
+  }
+}
+
+footer .footer .footer-menu ul{
+  margin-top: 1em;
+  @media only screen and (max-width: 576px) {
+    margin-top: 0.5em;
+  }
+}
+
+footer .footer .footer-menu ul li{
+  padding: 0.2em 0;
+}
+
+footer .footer .footer-menu ul li a{
+  color: var(--text);
+  font-size: 1em;
+  @media only screen and (max-width: 576px) {
+    font-size: 0.8em;
+  }
+}
+
+footer .footer .footer-menu ul li a:hover{
+  color: #fff;
+}
